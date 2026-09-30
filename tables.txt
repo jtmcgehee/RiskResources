@@ -1,0 +1,8 @@
+# The tables the Env Data Tools add-in offers under Reference Tables.
+# One line per file:  the name shown in Excel | the file name in this repo
+# Lines starting with # and blank lines are ignored.
+
+RSL Tables (THQ 0.1) | RSL_THQ0.1.xlsx
+ATSDR MRLs | ATSDR_MRLs.xlsx
+IRIS Oral RfDs | IRIS_RfD.xlsx
+IRIS Inhalation RfCs | IRIS_RfC.xlsx
