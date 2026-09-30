@@ -10,6 +10,7 @@ click (**Env Data Tools > Reference > Reference Tables**).
 | `ATSDR_MRLs.xlsx` | ATSDR Minimal Risk Levels | `ATSDR MRLs 0626` |
 | `IRIS_RfD.xlsx` | IRIS oral reference doses | `IRIS RfD 0926` |
 | `IRIS_RfC.xlsx` | IRIS inhalation reference concentrations | `IRIS RfC 0926` |
+| `PPRTV.xlsx` | EPA Provisional Peer-Reviewed Toxicity Values: each chemical's RfD and RfC, weight of evidence, and links to its assessment and IRIS page | `PPRTV 0926` |
 
 `tables.txt` lists the files the add-in offers, one per line:
 `the name shown in Excel | the file name`. Adding a table is adding its file
@@ -32,7 +33,15 @@ and one line there; the add-in needs no update.
 - RSLs: <https://www.epa.gov/risk/regional-screening-levels-rsls-generic-tables>
 - ATSDR MRLs: <https://wwwn.cdc.gov/TSP/MRLS/mrlsListing.aspx>
 - IRIS: <https://iris.epa.gov/AtoZ/>
+- PPRTVs: <https://www.epa.gov/pprtv/provisional-peer-reviewed-toxicity-values-pprtvs-assessments>
 
 The ATSDR file's MRL Value and Units columns were split from MRL+Units by
 formula in the original download; here they are plain values (the MRL as a
 number), so the file works in any version of Excel.
+
+EPA's PPRTV list downloads as a web page table named `.xls`. Here it is a real
+workbook: each RfD and RfC is kept as listed (`6 x 10^-3 mg/m3` - the exponent
+was a superscript on EPA's page), with its number (0.006) and units in their
+own columns, blank where EPA says *Not available* or *See IRIS*. The chemical,
+assessment and IRIS links still work. EPA lists Methyl Acrylate's RfC in
+mg/kg-day; it is kept as listed.
